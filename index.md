@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## 欢迎使用本软件
 
-You can use the [editor on GitHub](https://github.com/hetan697/project-N/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+更多的内容仍有待添加，敬请期待。
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
