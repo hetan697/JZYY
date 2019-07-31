@@ -1,8 +1,8 @@
-## 欢迎使用本软件
+## 讲座预告 APP
 
 更多的内容仍有待添加，敬请期待。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+方便且迅速地查找最新的讲座信息
 
 ### Markdown
 
