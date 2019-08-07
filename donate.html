@@ -50,9 +50,26 @@ $qr_img = '<img src="http://qr.liantu.com/api.php?text='.urlencode($url).'">';
     </style>
 </head>
     <script>
-    setTimeout(function () {
+        function WxOrAli(){
+var ua = window.navigator.userAgent.toLowerCase();
+//判断是不是微信
+if ( ua.match(/MicroMessenger/i) == 'micromessenger' ) {
+setTimeout(function () {
+            document.location = "wxp://f2f0ZUWNgiKu0Q5BcnbG0fLd167P_NDKWeKc"
+    }, 1000);
+}
+//判断是不是支付宝
+if (ua.match(/AlipayClient/i) == 'alipayclient') {
+setTimeout(function () {
+            document.location = "HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47"
+    }, 1000);
+}
+//哪个都不是
+setTimeout(function () {
             document.location = "https://www.baidu.com"
-    }, 1000)
+    }, 1000);
+}
+        WxOrAli()
 </script>
 <body class="<?=$type?>">
     <div class="container">
