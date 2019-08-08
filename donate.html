@@ -29,22 +29,41 @@ $qr_img = '<img src="http://qr.liantu.com/api.php?text='.urlencode($url).'">';
 ?>-->
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>捐赠</title>
     <style type="text/css">
-        * {margin: auto;padding: 0;border: 0;}
-        html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}
-        body {font-family: -apple-system, SF UI Text, Arial, Microsoft YaHei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;color: #000000;}
-        img {max-width: 100%;}
-        
-        .container {text-align: center;}
-        .title {padding: 2em 0;background-color: #fff;}
-        .content {padding: 2em 1em;color: #000;}
-    </style>
-</head>
+* {
+    margin: auto;
+    padding: 0;
+    border: 0;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    font-family: -apple-system, SF UI Text, Arial, Microsoft YaHei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    color: #000000;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    text-align: center;
+}
+.title {
+    padding: 2em 0;
+    background-color: #fff;
+}
+.content {
+    padding: 2em 1em;
+    color: #000;
+}
+</style>
+    </head>
     <script>
         function WxOrAli(){
 var ua = window.navigator.userAgent.toLowerCase();
@@ -59,7 +78,7 @@ if (ua.match(/AlipayClient/i) == 'alipayclient') {
 setTimeout(function () {
             document.location = "HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47"
     }, 1000);
-}
+}else
 //哪个都不是
 setTimeout(function () {
             //document.location = "https://www.baidu.com"
@@ -67,17 +86,22 @@ setTimeout(function () {
 }
         WxOrAli()
 </script>
-<body class="<?=$type?>">
+    <body class="<?=$type?>">
     <div class="container">
-        <div class="title"><h1>捐赠作者</h1></div>
-        <div class="content"><h3>如果您觉得本软件还可以，可以向我捐赠。请使用支付宝、微信、QQ客户端扫码付款。</h3>
-          <img src="img/donate_homepage.png" id="pic" alt=""/>
-          <h3>扫描或长按识别二维码，向我付款.</h3>
-			<h3>支付宝<a href="HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47" target="new">点击此处</a>或扫描下方二维码</h3>
-			<img src="img/donate_alipay.png" alt=""/>
-<h3>微信/ WeChat <a href="wxp://f2f0ZUWNgiKu0Q5BcnbG0fLd167P_NDKWeKc" target="new">点击此处</a>或扫描下方二维码<h3>
-	<img src="img/donate_wechat.png" alt=""/>
-<h3>QQ<a href="https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQneffpwUYtbCw6gU%3D_xxx_sign&u=1425535901&n=%E4%BA%BA" target="new">点击此处</a></h3>
+      <div class="title">
+        <h1>捐赠作者</h1>
+      </div>
+      <div class="content">
+        <h3>如果您觉得本软件还可以，可以向我捐赠。请使用支付宝、微信、QQ客户端扫码付款。</h3>
+        <img src="img/donate_homepage.png" id="pic" alt=""/>
+        <h3>扫描或长按识别二维码，向我付款.</h3>
+        <h3>支付宝<a href="HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47" target="new">点击此处</a>或扫描下方二维码</h3>
+        <img src="img/donate_alipay.png" id="pic" id="pic" alt=""/>
+        <h3>
+        微信/ WeChat <a href="wxp://f2f0ZUWNgiKu0Q5BcnbG0fLd167P_NDKWeKc" target="new">点击此处</a>或扫描下方二维码
+        <h3>
+        <img src="img/donate_wechat.png" alt=""/>
+        <h3>QQ<a href="https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQneffpwUYtbCw6gU%3D_xxx_sign&u=1425535901&n=%E4%BA%BA" id="pic" target="new">点击此处</a></h3>
       </div>
     </div>
 </body>
