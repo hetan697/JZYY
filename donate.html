@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 $ua = $_SERVER['HTTP_USER_AGENT'];
 if (strpos($ua, 'MicroMessenger')) {
     $type = 'wepay';
@@ -26,7 +26,7 @@ else {
     $icon_img = '<img src="http://ww2.sinaimg.cn/large/005zWjpngy1fojs089x6tj303k03kjr6.jpg" width="48px" height="48px" alt="'.$name.'">';
 }
 $qr_img = '<img src="http://qr.liantu.com/api.php?text='.urlencode($url).'">';
-?>
+?>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,15 +38,12 @@ $qr_img = '<img src="http://qr.liantu.com/api.php?text='.urlencode($url).'">';
     <style type="text/css">
         * {margin: auto;padding: 0;border: 0;}
         html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}
-        body {font-family: -apple-system, SF UI Text, Arial, Microsoft YaHei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;color: #333;}
+        body {font-family: -apple-system, SF UI Text, Arial, Microsoft YaHei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;color: #000000;}
         img {max-width: 100%;}
-        h3 {padding: 10px;}
+        
         .container {text-align: center;}
         .title {padding: 2em 0;background-color: #fff;}
-        .content {padding: 2em 1em;color: #fff;}
-        .wepay {background-color: #23ac38;}
-        .qq {background-color: #4c97d5;}
-        .other {background-color: #ff7055;}
+        .content {padding: 2em 1em;color: #000;}
     </style>
 </head>
     <script>
@@ -66,15 +63,19 @@ setTimeout(function () {
 }
 //哪个都不是
 setTimeout(function () {
-            document.location = "https://www.baidu.com"
+            //document.location = "https://www.baidu.com"
     }, 1000);
 }
         WxOrAli()
 </script>
 <body class="<?=$type?>">
     <div class="container">
-        <div class="title"><?=$icon_img?><h1><?=$name?></h1></div>
-        <div class="content"><?=$type=='other'?$qr_img.'<h3>请使用支付宝、微信、QQ客户端扫码付款</h3>':$qr_img.'<h3>扫描或长按识别二维码，向TA付款</h3>'?></div>
+        <div class="title"><h1>捐赠作者</h1></div>
+        <div class="content"><h3>如果您觉得本软件还可以，可以向我捐赠。请使用支付宝、微信、QQ客户端扫码付款</h3>
+          <img src="img/donate_homepage.png" id="pic" alt=""/>
+          <h3>扫描或长按识别二维码，向我付款.</h3>
+			<h3>支付宝<a href="HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47">在这儿</a></h3>
+      </div>
     </div>
 </body>
 </html>
