@@ -19,7 +19,7 @@
 
 ### 支付宝
 
-[点击此处]("HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47")或扫描下方二维码。
+[点击此处](HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47)或扫描下方二维码。
 
 ![img](img/donate_alipay.png)
 
@@ -27,5 +27,6 @@
 ### QQ
 
 扫描或长按下方二维码。
+
 ![img](img/donate_qq.png)
 
