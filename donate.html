@@ -19,14 +19,7 @@ elseif (strpos($ua, 'QQ/')) {
     $url = 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=17878127&ac=E04BE442991E7FFED28B3B5C3E187148F063DC3C6DACAD2983C87B482FC9E7AD&n=薛定谔的猫&f=wallet';
     $icon_img = '<img src="http://ww2.sinaimg.cn/large/005zWjpngy1fojrvmp427j303k03kjrb.jpg" width="48px" height="48px" alt="'.$name.'">';
 }
-else {
-    $type = 'other';
-    $name = '打赏作者';
-    $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-    $icon_img = '<img src="http://ww2.sinaimg.cn/large/005zWjpngy1fojs089x6tj303k03kjr6.jpg" width="48px" height="48px" alt="'.$name.'">';
-}
-$qr_img = '<img src="http://qr.liantu.com/api.php?text='.urlencode($url).'">';
-?>-->
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,8 +94,8 @@ setTimeout(function () {
     <h3>如果您觉得本软件帮助了您，可以向我捐赠。请使用支付宝、微信、QQ客户端扫码付款。</h3>
     <img src="img/donate_homepage.png" id="pic" alt=""/>
     <h3>使用上方二维码可以在手机上浏览本网页，以获得长按二维码扫描的体验。</h3>
-    
-	  <hr>
+    <p>如果下方有图片未完全加载，稍等即可</p>
+    <hr>
     <h3>支付宝<a href="HTTPS://QR.ALIPAY.COM/FKX01705XN8QUFV0CLMJ47" target="new">点击此处</a>或扫描或长按下方二维码</h3>
     <img src="img/donate_alipay.png" alt=""/>
     <h3> 微信/ WeChat 请扫描或长按下方二维码 </h3>
